@@ -1,0 +1,151 @@
+
+<!DOCTYPE html>
+<html lang="en" >
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <link rel="icon" href="../../favicon.ico">
+	  
+    <title>OneX Box</title>
+
+    <!-- Bootstrap core CSS -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
+    <link href="../../assets/css/ie10-viewport-bug-workaround.css" rel="stylesheet">
+	<link href="assets/css/font-awesome.css" rel="stylesheet">
+    <!-- Custom styles for this template -->
+    <link href="css/custom.css" rel="stylesheet">
+
+    <!-- Just for debugging purposes. Don't actually copy these 2 lines! -->
+    <!--[if lt IE 9]><script src="../../assets/js/ie8-responsive-file-warning.js"></script><![endif]-->
+    <!--<script src="../../assets/js/ie-emulation-modes-warning.js"></script>-->
+	
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+		
+
+  </head>
+
+  <body>
+	 
+    <div class="site-wrapper"  >
+		    <div class="pull-right social">
+				<a href="#" id="button"><span class="fa fa-volume-up" title="Stop the music!"></span>&nbsp&nbsp&nbsp&nbsp
+	   <a href="#" target="_blank" title="Like me on Facebook!"><span class="fa fa-facebook-square"></span></a>
+	   <a href="#" target="_blank" id="pinteresta" title="Watch me on Pinterest!"><span class="fa fa-pinterest-square" id="pinterest"></span></a>
+		    </div>
+		<div class="div1">
+			
+		</div>
+      <div class="site-wrapper-inner" >
+			  <div class="col-lg-3 col-md-3 col-sm-3 col-xs-3">
+				  <a href="index.html"><div class="btn2"><p>John Doe</p></div></a>
+			  <a href="#" class="three" id="slide"><div class="btn col-lg-offset-2 col-md-offset-2 col-sm-offset-2 col-xs-offset-2  mg20 shadowed"><p>Artworks</p></div></a>
+				 <a href="#" class="one"> <div class="btn col-lg-offset-1 col-md-offset-1 col-sm-offset-1 col-xs-offset-1 mg20 shadowed"><p>About</p></div></a>
+				  <a href="#" class="two"><div class="btn mg20 shadowed"><p>Contact</p></div></a>
+				   <div class="mg20"><p><a href="#"> </a></p></div>
+				  </div>
+		   <div class=" col-lg-1 col-md-1 col-sm-1 col-xs-1">
+			  
+		  </div>
+		  <div class="content col-lg-7 col-md-7 col-sm-7 col-xs-12 hide" id="one">
+			  <img src="http://placehold.it/150x150" style="float: right">
+			  <p>Minim e tempor ita duis, fabulas sunt tempor, quis vidisse si occaecat ex o sunt 
+				  mentitum vidisse se si esse si esse, varias fabulas officia de officia noster 
+				  tempor litteris, sed litteris familiaritatem. Noster ita e enim mentitum o nam 
+				  eram possumus possumus, non minim incurreret sempiternum, doctrina amet noster 
+				  laboris quis.
+			 		
+			  </p> 
+		  </div>
+		   <div class="content col-lg-7 col-md-7 col-sm-7 col-xs-12 hide center-text" id="two">
+			   <p>
+		  			johndoe@mail.com</br>
+		  			+48 123 123 123
+				 </p> 
+		  </div>
+            <!--<h1 class="cover-heading">Cover your page.</h1>
+            <p class="lead">Cover is a one-page template for building simple and beautiful home pages. Download, edit the text, and add your own fullscreen background photo to make it your own.</p>
+            <p class="lead">
+              <a href="#" class="btn btn-lg btn-default">Learn more</a>
+            </p>
+          </div>//-->
+
+          <div class="mastfooter hidden-xs hidden-sm col-lg-12">
+              <p><a href="http://katet.eu/templates/onex-box" target="_blank">OneX Box - Responsive Theme</a></p>
+				
+          </div>
+	  
+    </div>
+		
+	  </div>
+<div class="pull-right player" style="color: red;">
+	
+<audio id="myAudio" loop preload>
+	<!--autoplay -->
+    <source src="mystery-2.mp3" type="audio/mpeg">
+	<source src="mystery-2.mp3" type="audio/ogg">
+</audio>
+	<!--<button class="btn-player" onclick="document.getElementById('myAudio').play()"><span class="fa fa-2x fa-play"></span></button>
+	<button class="btn-player" onclick="document.getElementById('myAudio').pause()"><span class="fa fa-2x fa-pause"></span></button>//-->
+	<!--<button onclick="document.getElementById('myAudio').volume+=0.1">Volume Up</button>
+	<button onclick="document.getElementById('myAudio').volume-=0.1">Volume Down</button>//-->
+	<script>
+	var vid = document.getElementById("myAudio");
+		  vid.volume = 0.2;
+	  </script>
+	</div>
+
+
+    <!-- Bootstrap core JavaScript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+	  <script type="text/javascript" src="yoxview/yoxview-init.js"></script>
+		<script type="text/javascript">
+			$(document).ready(function(){
+		        $("#slide").yoxview({
+				renderInfo: true,
+				backgroundOpacity: 0.9, 									  
+				images: [ 
+		            { media: { src: "images/gallery/1.jpg", title: "Title" }},
+		            { media: { src: "images/gallery/2.jpg", title: "Title" }},
+		            { media: { src: "images/gallery/3.jpg", title: "Title" }},					
+		        ]});
+		    });
+		</script>
+    <script src="js/bootstrap.min.js"></script>
+    <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
+    <script src="../../assets/js/ie10-viewport-bug-workaround.js"></script>
+	  <script src="js/change.js"></script>
+	  <script>
+		$(document).ready(function() {
+    		var playing = false;
+
+			$('a#button').click(function() {
+				$(this).toggleClass("down");
+
+				if (playing == false) {
+					document.getElementById('myAudio').play();
+					playing = true;
+					$(this).html('<span class="fa fa-pause-circle"></span>&nbsp&nbsp&nbsp&nbsp');
+
+				} else {
+					document.getElementById('myAudio').pause();
+					playing = false;
+					$(this).html('<span class="fa fa-volume-up"></span>&nbsp&nbsp&nbsp&nbsp');
+				}
+
+
+    });
+});
+	  </script>
+  </body>
+</html>
